@@ -8,39 +8,38 @@
 
 \typeout{NT FILE abstract-en.tex}%
 
-Regardless of the language in which the dissertation is written, usually there are at least two abstracts: one abstract in the same language as the main text, and another abstract in some other language.
+\paragraph{}Over the years, the world of technology has been expanding in every possible field, 
+and agriculture is no exception. The use of technology in Smart Agriculture has been increasing, with 
+Internet of Things networks, Artificial Intelligence systems for management and forecasting, and robotics to 
+automate processes, do the repetitive jobs humans would rather not do, like applying pesticide, 
+harvesting products, and evaluating the state of the fields, and also some that humans can't do, 
+surveilling large fields. These developments not only come to facilitate tasks but also to battle ongoing problems 
+with the agricultural environment, like the lack of young people willing to do hard work on the fields 
+and the increase of the world population, that will increase the need for food production. 
+This work is focused on the development of 
+a tractor-trailer robot, capable of autonomously navigating through a field while spraying pesticides 
+directly on the products. The focus is on the navigation side of the robot, researching the use of 
+robotics in Smart Agriculture, researching robot path planning methods like Voronoi Graphs, Visibility graphs, Sampling-based approaches like 
+the Rapidly exploring Random Trees and the Probabilistic Roadmap, 
+Bio-heuristic algorithms like the Ant Colony Optimization, Particle Swam Optimization and the Genetic Algorithm, and also mentioning the learning-based methods. 
+This work will also review a few control methods included in the library nav2 of ROS2 like the Dynamic Windows Approach,
+ Pure Pursuit, and the Model Predictive Controller. This task is already a challenging one, however, with the addition of the trailer 
+ to the system, the task becomes even more challenging, as the trailer dynamics will need to be accounted 
+for. In the end the chosen methods to be tested will be the Voronoi Graph with the A* algorithm for path 
+planning, and the Pure Pursuit controller for the trajectory tracking.
+The tractor-trailer system was chosen, despite its complexity and limited documentation, 
+due to its modularity, allowing for independent operation and reusability.
 
-The abstracts' order varies with the school.  If your school has specific regulations concerning the abstracts' order, the \gls{novathesis} (\LaTeX) template will respect them.  Otherwise, the default rule in the \gls{novathesis} template is to have in first place the abstract in \emph{the same language as main text}, and then the abstract in \emph{the other language}. For example, if the dissertation is written in Portuguese, the abstracts' order will be first Portuguese and then English, followed by the main text in Portuguese. If the dissertation is written in English, the abstracts' order will be first English and then Portuguese, followed by the main text in English.
-%
-However, this order can be customized by adding one of the following to the file \verb+5_packages.tex+.
-
-\begin{verbatim}
-    \ntsetup{abstractorder={<LANG_1>,...,<LANG_N>}}
-    \ntsetup{abstractorder={<MAIN_LANG>={<LANG_1>,...,<LANG_N>}}}
-\end{verbatim}
-
-For example, for a main document written in German with abstracts written in German, English and Italian (by this order) use:
-\begin{verbatim}
-    \ntsetup{abstractorder={de={de,en,it}}}
-\end{verbatim}
-
-Concerning its contents, the abstracts should not exceed one page and may answer the following questions (it is essential to adapt to the usual practices of your scientific area):
-
-\begin{enumerate}
-  \item What is the problem?
-  \item Why is this problem interesting/challenging?
-  \item What is the proposed approach/solution/contribution?
-  \item What results (implications/consequences) from the solution?
-\end{enumerate}
-
-% Palavras-chave do resumo em Inglês
-% \begin{keywords}
-% Keyword 1, Keyword 2, Keyword 3, Keyword 4, Keyword 5, Keyword 6, Keyword 7, Keyword 8, Keyword 9
-% \end{keywords}
 \keywords{
-  One keyword \and
-  Another keyword \and
-  Yet another keyword \and
-  One keyword more \and
-  The last keyword
+  Smart Agriculture \and
+  tractor-trailer \and
+  IoT \and
+  Artificial Intelligence \and
+  Robotics \and
+  Path planning \and
+  Robot control \and
+  ROS2 \and
+  Voronoi Graph \and
+  A* \and
+  Pure Pursuit 
 }
