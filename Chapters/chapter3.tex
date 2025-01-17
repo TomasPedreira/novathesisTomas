@@ -74,11 +74,29 @@ the writing of the thesis will take place from July until its final submission d
 To publish the results, in September, while writing the final thesis, the results and associated paper 
 will be prepared to be submitted to a conference or journal. 
 
-\paragraph{}Since this document is to be submitted in February, the first and second steps have already been started 
+
+Since this document is to be submitted in February, the first and second steps have already been started 
 and are currently being worked on. The current approach to the adaptation of the simulation model is to create a 
-state publisher which calculates the values of the hitch joint every time a new velocity is commanded (approximately 
-every ten milliseconds). The approach may change as the work progresses since it is not fault tolerant and may only be 
+state publisher which calculates the values of the hitch joint every tenth of a second. The approach may change as the work progresses since it is not fault tolerant and may only be 
 a temporary solution to start implementing the planning algorithms, as to not get behind schedule.
+In the following figure \ref{fig:publisher} it is possible to see the custom trailer state publisher 
+publishing the transforms of the system in Rviz2, on the right, and the simulated state in Gazebo Fortress ,on the left.
+
+\begin{figure}[htbp]
+    \centering
+    \begin{minipage}[b]{0.4\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{gazeboSim.jpeg}
+    \end{minipage}
+    \hspace{0.75cm}
+    \begin{minipage}[b]{0.4\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{trailerSim.jpeg} 
+    \end{minipage}
+    \caption{Gazebo simulation and Rviz2 visualizaton of the current state. The used trailer 
+    is an abstraction of the actual trailer, being used for collision detection purposes.}
+    \label{fig:publisher}
+\end{figure}
 
 The implementation of the planning and control algorithms is also already being worked on, with the current focus 
 being the adaptation of the Voronoi algorithm to the new version of ROS.
