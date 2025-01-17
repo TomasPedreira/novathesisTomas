@@ -510,7 +510,7 @@ where the author proposed a Voronoi Hybrid A* for the path-planner and two pure-
 as path trackers. The author concluded that the traditional approaches were not feasible due 
 to generating paths that wouldn't account for the trailer's non-holomic constraints. Therefore, 
 a different version of the A* was used. The Hybrid A* is much like the traditional one, however, 
-instead of only being able to move to the nodes or rid cells, the nodes generated in the Hybrid A* 
+instead of only being able to move to the nodes or grid cells, the nodes generated in the Hybrid A* 
 contain the robots dynamics $(x,y,\theta_0,\theta_1,d)$ where $d$ is the direction of motion of said 
 node (forward or reverse), and can reach anywhere in the continuous state space. The cost of each 
 node is calculated penalizes the change of direction, backwards movement, steering input, change of 
