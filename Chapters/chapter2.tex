@@ -514,7 +514,7 @@ and the distance between the hitch and the trailer's rear axle, respectively.
 \paragraph{}Some applications of the tractor-trailer system can be found in ~\cite{theman}, 
 where the author proposed a Voronoi Hybrid A* for the path-planner and two pure-pursuit controllers 
 as path trackers. The author concluded that the traditional approaches were not feasible due 
-to generating paths that wouldn't account for the trailer's non-holomic constraints. Therefore, 
+to generating paths that wouldn't account for the trailer's non-holonomic constraints. Therefore, 
 a different version of the A* was used. The Hybrid A* is much like the traditional one, however, 
 instead of only being able to move to the nodes or grid cells, the nodes generated in the Hybrid A* 
 contain the robots dynamics $(x,y,\theta_0,\theta_1,d)$ where $d$ is the direction of motion of said 
@@ -579,7 +579,7 @@ it does not have a path planner to place the waypoints and has to be done by han
 tackle the object avoidance issue to some successful extent but could be improved.
 
 \paragraph{} In ~\cite{ttex3} an exact local planner was used to solve this problem. The tractor-trailer is a 
-non-holomic system that can't be integrated, however, if the steering angle and velocity were constant, 
+non-holonomic system that can't be integrated, however, if the steering angle and velocity were constant, 
 the system would now be integrable. The author used this concept to create rotational and translational 
 paths for this system. Since the steering angle is constant and constrained by the vehicles dynamics 
 it was possible to calculate the angle for each arc by using the following equation:
